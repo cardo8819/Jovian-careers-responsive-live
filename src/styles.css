@@ -1,40 +1,4 @@
 
-/*
-
-
-
-
-
-
-h3 {
-  margin-bottom: 4px;
-  margin-top: 0;
-}
-
-
-#footer {
-  background-color: #E2E8F0;
-  padding: 8px;
-  margin-top: 32px;
-  text-align: center;
-}
-
-#footer-links {
-  list-style: none;  
-}
-
-#footer-links li {
-  display: inline;
-  margin: 0 16px;
-}
-
-.copyright {
-  color: #71717A;
-  font-size: 0.875rem;
-}
-
-*/
-
 /*BASE STYLES*/
 html{
   font-size: 14px;
@@ -156,7 +120,7 @@ h1, h2{
   margin: 16px 0;
 }
 
-#application-form label {
+.form-group label {
   font-weight: 600;
 }
 
@@ -171,7 +135,6 @@ h1, h2{
 }
 
 .form-group textarea {
-  width: 80%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -191,6 +154,27 @@ h1, h2{
   color: white;
   font-weight: 500;
   cursor: pointer;
+}
+
+#footer {
+  background-color: #E2E8F0;
+  padding: 8px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+#footer-links {
+  list-style: none;
+  padding-left: 0;  
+}
+
+#footer-links li {
+  margin: 8px 16px;
+}
+
+.copyright {
+  color: #71717A;
+  font-size: 0.875rem;
 }
 
 /*tablets*/
@@ -221,6 +205,15 @@ h1, h2{
   .form-group textarea{
     width: 80%;
   }
+
+  #footer-links li {
+    display: inline;
+    margin: 0 16px;
+  }
+  .form-group input[type="submit"]{
+    width: auto !important;
+    padding: 10px !important;
+  }
 }
 
 
@@ -229,9 +222,7 @@ h1, h2{
 
 /*laptops*/
 @media screen and (min-width: 768px) {
-  html{
-    font-size: 20px;
-   }
+ 
  
   #banner{
   height: 250px;
